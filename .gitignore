@@ -1,22 +1,25 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
 *.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+# Arquivos de aplicativos gerados por ferramentas de desenvolvimento rápido.
+
+*.json
+# Arquivos JSON (geralmente usados para configurações ou dados temporários).
+
+.env
+# Arquivo de variáveis de ambiente (contém credenciais ou configurações sensíveis).
+
+venv
+# Diretório do ambiente virtual Python (não deve ser versionado).
+
+__pycache__
+# Diretório com arquivos compilados do Python (gerado automaticamente).
+
+dag_auto.py
+# Arquivo específico de uma DAG (exemplo de exclusão de arquivos sensíveis ou temporários).
+
+Makefile
+# Arquivo usado para automação de tarefas, excluído por não ser necessário no repositório.
+
+data/*
+# Diretório para dados (geralmente contém dados temporários ou sensíveis, que não devem ser versionados).
+
+_airflow/logs/*

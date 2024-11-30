@@ -1,0 +1,5 @@
+pytrends
+google_generativeai
+# psycopg2
+pandas
+requests
