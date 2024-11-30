@@ -8,12 +8,11 @@ Este repositório contém o material necessário para o **Workshop sobre Airflow
 
 ### Diretórios
 
-- **`_airflow`**: Configurações e arquivos essenciais para a execução do Airflow.
-  - **`config`**: Arquivos de configuração do Airflow.
-  - **`dags`**: Contém as DAGs definidas para os exemplos do workshop.
-    - **`dag_auto.py`**: Exemplo principal de DAG automatizada com etapas para integração de APIs e manipulação de dados.
-  - **`logs`**: Diretório onde os logs de execução das DAGs são armazenados.
-  - **`plugins`**: Extensões ou operadores personalizados para o Airflow.
+- **`config`**: Arquivos de configuração do Airflow.
+- **`dags`**: Contém as DAGs definidas para os exemplos do workshop.
+  - **`dag_auto.py`**: Exemplo principal de DAG automatizada com etapas para integração de APIs e manipulação de dados.
+- **`logs`**: Diretório onde os logs de execução das DAGs são armazenados.
+- **`plugins`**: Extensões ou operadores personalizados para o Airflow.
 
 - **`data`**: Diretório para armazenar dados gerados ou utilizados pelas DAGs.
   - **`generated_article.txt`**: Arquivo de saída criado por uma das DAGs como exemplo.
@@ -72,6 +71,13 @@ cd ICEV-airflow
   ```
 
 ### 3. Inicialize o Ambiente com Docker Compose
+
+- crie as pastas para compatibilizar a estrutura configurada no docker-compose:
+  ```bash
+  mkdir logs
+  mkdir dags
+  mkdir plugins
+  ```
 
 - Execute o comando para subir o ambiente:
   ```bash

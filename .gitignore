@@ -22,4 +22,8 @@ Makefile
 data/*
 # Diretório para dados (geralmente contém dados temporários ou sensíveis, que não devem ser versionados).
 
-logs/*
+logs
+
+plugins
+
+dags
